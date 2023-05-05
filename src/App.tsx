@@ -30,7 +30,7 @@ function App() {
     setCurrentUser(currentData);
   };
   const handleMouseLeave = () => {
-    setShowCard(true);
+    setShowCard(false);
   };
 
   return (
