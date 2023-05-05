@@ -1,42 +1,201 @@
-#root {
-  max-width: 1280px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+.main_table{
+  background-color: #fff;
+  max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  position: relative;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* name and avatar of first cell */
+.avatar_name{
+  display: flex;
+align-items: center;
+gap: 15px;
+padding: 12px 12px 12px 0;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.name_email{
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.name_email p{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #999
+
+}
+.first_name_last_name{
+  display: flex;
+}
+.first_name_last_name p{
+font-size: 0.9rem;
+font-weight: 600;
+color: rgb(97, 97, 97);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.avatar{
+  width: 40px;
+  height: 40px;
+border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+
+.select_menus{
+  padding: 10px;
+  border: none;
+  border-radius: .3rem;
+  border-right: 10px solid transparent ;
+  background-color:rgb(249 250 251 );
+  outline: 2px solid rgb(209 213 219 );
 }
 
-.card {
-  padding: 2em;
+th, td {
+  padding:5px 70px 0px 0;
 }
 
-.read-the-docs {
-  color: #888;
+th{
+  font-weight: 500;
+  color: rgb(97, 97, 97);
+  text-align: left;
+  font-weight: 600;
+}
+.activetab{
+  font-weight: 600;
+
+  color: rgb(0, 156, 57);
+}
+.ownerTab{
+  color: rgb(97, 97, 97);
+  font-weight: 600;
+
+}
+.Access_locks{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+/* card */
+.hoverCard {
+  position: absolute;
+  width: 350px;
+  background-color: #fff;
+  top: 21%;
+  border-radius: 2.8rem;
+  box-shadow: 0px 24px 107px -36px rgb(0 0 0 / 33%);
+  padding: 2.2rem;
+  display: flex;
+  left: 65%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.hoverCard-image {
+    width: 9rem;
+    height: 9rem;
+}
+
+.hoverCard-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.hoverCard-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.hoverCard-name-text,
+.hoverCard-plan-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.hoverCard-email-text {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.hoverCard-active-btn {
+    padding: 0.8rem 3rem;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #feb23e;
+    margin-bottom: 0.4rem;
+}
+
+.hoverCard-progress {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+progress {
+    width: 100%;
+    height: 6px;
+    background-color: #fff5e4;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #fff5e4;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #f19d24;
+    border-radius: 10px;
+}
+
+.hoverCard-ownership {
+    display: flex;
+    gap: 1.4rem;
+}
+
+.hoverCard-view,
+.hoverCard-click {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.hoverCard-view-number,
+.hoverCard-click-number {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.hoverCard-view-text,
+.hoverCard-click-text {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.hoverCard-hor-line {
+    /* width: 100%; */
+    border: 1px solid rgb(0, 0, 0,0.1);
 }
