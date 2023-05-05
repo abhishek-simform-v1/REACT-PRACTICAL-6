@@ -21,7 +21,7 @@ interface DummyDataInter {
   __v: number;
 }
 function App() {
-  const [data, setData] = useState(DummyData);
+  const data = DummyData;
   const [showCard, setShowCard] = useState(false);
   const [currentUser, setCurrentUser] = useState<DummyDataInter>();
 
