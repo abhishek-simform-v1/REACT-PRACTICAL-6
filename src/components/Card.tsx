@@ -27,7 +27,9 @@ const Card = (props: props) => {
       <div className="hoverCard-detail">
         <div className="hoverCard-name-active">
           <p className="hoverCard-name-text">
-            {data.first_name} {data.last_name}
+            <span className="hoverdot">
+              {data.first_name} {data.last_name}
+            </span>
           </p>
           <div className="hoverCard-active-text"></div>
         </div>

@@ -1,12 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 }
-.main_table{
+.main_table {
   background-color: #fff;
   max-width: 1300px;
   width: 100%;
@@ -16,70 +18,67 @@ body{
 }
 
 /* name and avatar of first cell */
-.avatar_name{
+.avatar_name {
   display: flex;
-align-items: center;
-gap: 15px;
-padding: 12px 12px 12px 0;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 12px 12px 0;
 }
-.name_email{
+.name_email {
   display: flex;
   gap: 2px;
   flex-direction: column;
 }
-.name_email p{
+.name_email p {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #999
-
+  color: #999;
 }
-.first_name_last_name{
+.first_name_last_name {
   display: flex;
 }
-.first_name_last_name p{
-font-size: 0.9rem;
-font-weight: 600;
-color: rgb(97, 97, 97);
+.first_name_last_name p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(97, 97, 97);
 }
 
-.avatar{
+.avatar {
   width: 40px;
   height: 40px;
-border-radius: 50%;
+  border-radius: 50%;
 }
 
-
-
-.select_menus{
+.select_menus {
   padding: 10px;
   border: none;
-  border-radius: .3rem;
-  border-right: 10px solid transparent ;
-  background-color:rgb(249 250 251 );
-  outline: 2px solid rgb(209 213 219 );
+  border-radius: 0.3rem;
+  border-right: 10px solid transparent;
+  background-color: rgb(249 250 251);
+  outline: 2px solid rgb(209 213 219);
 }
 
-th, td {
-  padding:5px 70px 0px 0;
+th,
+td {
+  padding: 5px 70px 0 0;
 }
 
-th{
+th {
   font-weight: 500;
   color: rgb(97, 97, 97);
   text-align: left;
   font-weight: 600;
 }
-.activetab{
+.activetab {
   font-weight: 600;
 
   color: rgb(0, 156, 57);
 }
-.ownerTab{
+.ownerTab {
   color: rgb(97, 97, 97);
   font-weight: 600;
-
 }
-.Access_locks{
+.Access_locks {
   display: flex;
   align-items: center;
   gap: 2em;
@@ -92,7 +91,7 @@ th{
   background-color: #fff;
   top: 21%;
   border-radius: 2.8rem;
-  box-shadow: 0px 24px 107px -36px rgb(0 0 0 / 33%);
+  box-shadow: 0 24px 107px -36px rgb(0 0 0 / 33%);
   padding: 2.2rem;
   display: flex;
   left: 65%;
@@ -103,99 +102,116 @@ th{
 }
 
 .hoverCard-image {
-    width: 9rem;
-    height: 9rem;
+  width: 9rem;
+  height: 9rem;
 }
 
 .hoverCard-image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
 }
 
 .hoverCard-detail {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
 }
+.hoverCard-name-text{
+  position: relative;
 
+}
+.hoverdot{
+  position: relative;
+}
+.hoverdot::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50rem;
+  left: 105%;
+  top: 15%;
+  background-color: green;
+}
 .hoverCard-name-text,
 .hoverCard-plan-text {
-    font-size: 1.3rem;
-    font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .hoverCard-email-text {
-    font-size: 0.9rem;
-    opacity: 0.7;
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
 
 .hoverCard-active-btn {
-    padding: 0.8rem 3rem;
-    border: none;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    background-color: #feb23e;
-    margin-bottom: 0.4rem;
+  padding: 0.8rem 3rem;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #feb23e;
+  margin-bottom: 0.4rem;
 }
 
 .hoverCard-progress {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  position: relative;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 progress {
-    width: 100%;
-    height: 6px;
-    background-color: #fff5e4;
-    border-radius: 10px;
+  width: 100%;
+  height: 6px;
+  background-color: #fff5e4;
+  border-radius: 10px;
 }
 
 progress::-webkit-progress-bar {
-    background-color: #fff5e4;
-    border-radius: 10px;
+  background-color: #fff5e4;
+  border-radius: 10px;
 }
 
 progress::-webkit-progress-value {
-    background-color: #f19d24;
-    border-radius: 10px;
+  background-color: #f19d24;
+  border-radius: 10px;
 }
 
 .hoverCard-ownership {
-    display: flex;
-    gap: 1.4rem;
+  display: flex;
+  gap: 1.4rem;
 }
 
 .hoverCard-view,
 .hoverCard-click {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
 }
 
 .hoverCard-view-number,
 .hoverCard-click-number {
-    font-size: 1.5rem;
-    font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .hoverCard-view-text,
 .hoverCard-click-text {
-    font-size: 1rem;
-    font-weight: 400;
-    opacity: 0.7;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.7;
 }
 
 .hoverCard-hor-line {
-    /* width: 100%; */
-    border: 1px solid rgb(0, 0, 0,0.1);
+  /* width: 100%; */
+  border: 1px solid rgb(0, 0, 0, 0.1);
 }

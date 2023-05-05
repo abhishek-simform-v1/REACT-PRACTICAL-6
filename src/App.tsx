@@ -25,12 +25,12 @@ function App() {
   const [showCard, setShowCard] = useState(false);
   const [currentUser, setCurrentUser] = useState<DummyDataInter>();
 
-  const handleMouseEnter = (currentData : DummyDataInter) => {
+  const handleMouseEnter = (currentData: DummyDataInter) => {
     setShowCard(true);
     setCurrentUser(currentData);
   };
   const handleMouseLeave = () => {
-    setShowCard(false);
+    setShowCard(true);
   };
 
   return (
