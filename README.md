@@ -27,8 +27,7 @@ To install this application, follow these steps:
 
 The project structure is organized into **`src`** folder.
 
-- **`src/components`**: contains the reusable UI components.
-- **`src/containers`**: contains the components that manage the application state and use the UI components.
+application state and use the UI components.
 
 ## **Using the Application**
 
@@ -45,8 +44,8 @@ The application displays a list of users on the left-hand side of the screen. Wh
 This project was built with the following technologies:
 
 - React.js
-- Redux
 - HTML
+- context
 - CSS
 
 ## **License**
