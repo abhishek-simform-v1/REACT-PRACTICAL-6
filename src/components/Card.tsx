@@ -13,16 +13,15 @@ interface DummyDataInter {
   __v: number;
 }
 
-import { memo } from "react";
-import { useSelector } from "react-redux";
-import { initType } from "../slice/Slice";
+import { memo } from 'react';
+import { useSelector } from 'react-redux';
+import { initType } from '../slice/Slice';
 
 const Card = () => {
   // const data = props.hoverData;
   const data = useSelector((state: initType) => state.hover.currentUser);
   // const data = props.hoverData;
   const showCard = useSelector((state: initType) => state.hover.showCard);
-  console.log(showCard);
   return (
     <>
       {showCard ? (

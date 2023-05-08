@@ -1,21 +1,20 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   DummyDataInter,
   handleMouseEnter,
   handleMouseLeave,
   initType,
-} from "../slice/Slice";
-import Access from "./Access";
-import Lock from "./Lock";
-import Name from "./Name";
-import Status from "./Status";
+} from '../slice/Slice';
+import Access from './Access';
+import Lock from './Lock';
+import Name from './Name';
+import Status from './Status';
 
 const Table = () => {
   const data: DummyDataInter[] = useSelector(
     (state: initType) => state.hover.data
   );
-  console.log(data);
   const dispatch = useDispatch();
   return (
     <table>

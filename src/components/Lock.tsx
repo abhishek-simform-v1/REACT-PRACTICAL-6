@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo } from 'react';
 
 type prop = {
   removable: boolean | string;
@@ -14,9 +14,9 @@ const Lock = ({ removable }: prop) => {
           viewBox="0 0 24 24"
           fill="none"
           stroke="#444"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="feather feather-trash-2"
         >
           <polyline points="3 6 5 6 21 6"></polyline>
@@ -32,9 +32,9 @@ const Lock = ({ removable }: prop) => {
           viewBox="0 0 24 24"
           fill="none"
           stroke="#444"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="feather feather-lock"
         >
           <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>

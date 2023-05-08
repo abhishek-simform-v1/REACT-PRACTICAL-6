@@ -1,6 +1,6 @@
-import { createSlice } from "@reduxjs/toolkit";
-import type { PayloadAction } from "@reduxjs/toolkit";
-import { DummyData } from "../components/DummyData";
+import { createSlice } from '@reduxjs/toolkit';
+import type { PayloadAction } from '@reduxjs/toolkit';
+import { DummyData } from '../components/DummyData';
 
 export interface DummyDataInter {
   _id: string;
@@ -30,18 +30,10 @@ const init: initType = {
 };
 
 export const hoverSlice = createSlice({
-  name: "hover",
+  name: 'hover',
   initialState: init,
   reducers: {
-    // const handleMouseEnter = (currentData: DummyDataInter) => {
-    // setShowCard(true);
-    // setCurrentUser(currentData);
-    // };
-    // const handleMouseLeave = () => {
-    // setShowCard(false);
-    // };
     handleMouseEnter: (state, action: PayloadAction) => {
-      console.log(action.payload);
       state.showCard = true;
       state.currentUser = action.payload;
     },
