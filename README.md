@@ -3,7 +3,7 @@
 ## Deployement Link
 
 ```jsx
-https://react-practical-4-simform-v.netlify.app/
+https://react-practical-5-simform-v2.netlify.app/
 ```
 
 ## **Getting Started**
@@ -18,8 +18,8 @@ This project is a simple React application that displays a list of users and the
 
 To install this application, follow these steps:
 
-1. Clone this repository to your local machine using the command **`git clone https://github.com/abhishek-simform-v1/REACT-PRACTICAL-4`**
-2. Navigate to the project directory using the command **`cd REACT-PRACTICAL-4`**
+1. Clone this repository to your local machine using the command **`git clone https://github.com/abhishek-simform-v1/REACT-PRACTICAL-5`**
+2. Navigate to the project directory using the command **`cd REACT-PRACTICAL-5`**
 3. Install the project dependencies using the command **`npm install`**
 4. Start the development server using the command **`npm run dev`**
 
@@ -45,7 +45,7 @@ This project was built with the following technologies:
 
 - React.js
 - HTML
-- context
+- redux-toolkit
 - CSS
 
 ## **License**

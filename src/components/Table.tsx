@@ -1,4 +1,3 @@
-import { useSelector } from "react-redux";
 import {
   DummyDataInter,
   handleMouseEnter,
@@ -15,11 +14,11 @@ import { memo } from "react";
 import { useAppDispatch, useAppSelector } from "../hooks/hooks";
 import Pagination from "./TableData/Pagination/Pagination";
 const Table = () => {
-  const data: DummyDataInter[] = useSelector(
+  const data: DummyDataInter[] = useAppSelector(
     (state: initType) => state.hover.data
   );
 
-  const state = useAppSelector((state) => state.hover.panding);
+  const state = useAppSelector((state: initType) => state.hover.panding);
   const dispatch = useAppDispatch();
 
   return (
