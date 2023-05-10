@@ -15,10 +15,12 @@ import { useAppDispatch, useAppSelector } from "../hooks/hooks";
 import Pagination from "./TableData/Pagination/Pagination";
 const Table = () => {
   const data: DummyDataInter[] = useAppSelector(
-    (state: initType) => state.hover.data
+    (state: { hover: { data: DummyDataInter[] } }) => state.hover.data
   );
 
-  const state = useAppSelector((state: initType) => state.hover.panding);
+  const state = useAppSelector(
+    (state: { hover: { panding: Boolean } }) => state.hover.panding
+  );
   const dispatch = useAppDispatch();
 
   return (
