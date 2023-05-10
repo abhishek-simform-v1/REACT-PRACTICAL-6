@@ -1,27 +1,12 @@
-interface DummyDataInter {
-  _id: string;
-  email: string;
-  first_name: string;
-  last_name: string;
-  avatar: string;
-  active: boolean;
-  owner: boolean;
-  role: string;
-  removable: string | boolean;
-  createdAt: string;
-  updatedAt: string;
-  __v: number;
-}
+import { memo } from "react";
 
-import { memo } from 'react';
-import { useSelector } from 'react-redux';
-import { initType } from '../slice/Slice';
+import { useAppSelector } from "../../../hooks/hooks";
 
 const Card = () => {
   // const data = props.hoverData;
-  const data = useSelector((state: initType) => state.hover.currentUser);
+  const data = useAppSelector((state) => state.hover.currentUser);
   // const data = props.hoverData;
-  const showCard = useSelector((state: initType) => state.hover.showCard);
+  const showCard = useAppSelector((state) => state.hover.showCard);
   return (
     <>
       {showCard ? (
