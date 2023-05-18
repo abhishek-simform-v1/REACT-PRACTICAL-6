@@ -3,7 +3,7 @@
 ## Deployement Link
 
 ```jsx
-https://redux--soft-cucurucho-6a8d20.netlify.app/
+https://react-practical-6-simform.netlify.app/
 ```
 
 ## **Getting Started**

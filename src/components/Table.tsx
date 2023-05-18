@@ -12,7 +12,7 @@ import SkeletonCard from "../skeleton/Skeleton";
 import { memo } from "react";
 
 import { useAppDispatch, useAppSelector } from "../hooks/hooks";
-import Pagination from "./TableData/Pagination/Pagination";
+
 const Table = () => {
   const data: DummyDataInter[] = useAppSelector((state) => state.hover.data);
 
