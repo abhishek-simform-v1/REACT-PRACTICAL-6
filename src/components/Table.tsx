@@ -73,7 +73,7 @@ const Table = () => {
       ) : (
         <SkeletonCard />
       )}
-      <Pagination />
+      {/* <Pagination /> */}
     </>
   );
 };

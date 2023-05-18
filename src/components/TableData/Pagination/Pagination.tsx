@@ -16,7 +16,7 @@ const Pagination = () => {
       nextLabel={<ArrowRight />}
       className={style.pagination}
       pageClassName={style.page}
-      breakLabel="..."
+      breakLabel="  . . . . .  "
       previousClassName={style.indicators}
       nextClassName={style.indicators}
       activeClassName={style.activepage}

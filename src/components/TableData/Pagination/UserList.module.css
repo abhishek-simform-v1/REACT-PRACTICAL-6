@@ -41,7 +41,8 @@ color: rgb(246, 152, 30);
     border-radius: 20%;
 }
 .page a {
-    padding: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
 }
 
 .activepage {
