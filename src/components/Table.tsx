@@ -18,11 +18,9 @@ const Table = () => {
 
   const state = useAppSelector((state) => state.hover.panding);
   const dispatch = useAppDispatch();
-  const mode_title = import.meta.env.VITE_APP_PROJECT_TITLE;
 
   return (
     <>
-      <h2 className="mode_title">{mode_title}</h2>
       {!state ? (
         <table>
           <thead>
@@ -73,7 +71,9 @@ const Table = () => {
           </tbody>
         </table>
       ) : (
-        <SkeletonCard />
+        <>
+          <SkeletonCard />
+        </>
       )}
       {/* <Pagination /> */}
     </>
