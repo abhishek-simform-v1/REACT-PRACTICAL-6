@@ -41,12 +41,12 @@ const init: initType = {
   data: [],
   panding: true,
 };
+const baseUrl = import.meta.env.VITE_APP_API_PATH;
 export const getUserName = createAsyncThunk(
   "account/getUser",
   async (pageNumber: number) => {
-    const response = await axios.get(
-      `https://servers-omega.vercel.app/users/p?limit=8&page=${pageNumber}`
-    );
+    const response = await axios.get(`${baseUrl}/p?limit=8&page=${pageNumber}`);
+    console.log(response);
     return [...response.data.users];
   }
 );

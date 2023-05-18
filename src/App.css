@@ -244,3 +244,8 @@ progress::-webkit-progress-value {
 }
 /* pagination */
 
+.mode_title{
+ text-align: center;
+padding: 1rem;
+color: #777;
+}
